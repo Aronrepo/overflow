@@ -25,8 +25,8 @@ public class StackoverflowTwApplication {
                 System.getenv("SPRING_DATASOURCE_USERNAME"),
                 System.getenv("SPRING_DATASOURCE_PASSWORD"));
         Map<String, String> tables = Map.of(
-                "questions", TableStatements.QUESTIONS,
-                "answers", TableStatements.ANSWERS
+                "answers", TableStatements.ANSWERS,
+                "questions", TableStatements.QUESTIONS
         );
         TableInitializer tableInitializer = new TableInitializer(database, tables);
         tableInitializer.initialize();

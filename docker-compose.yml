@@ -2,15 +2,15 @@ version: '3.2'
 
 services:
   backend:
-    build:
-      context: . # Use an image built from the specified dockerfile in the backend directory.
-      dockerfile: Dockerfile
+    image: arondocker100/stackoverflow
     ports:
-      - "8080:8080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
+      - "8080:8080"
     depends_on:
       - postgresdb
-    env_file:
-      - .env # Reference the .env file for environment variables
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresdb:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
     networks:
       - backend-network
 
