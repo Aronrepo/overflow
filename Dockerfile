@@ -16,8 +16,8 @@ FROM maven:3.8.7-openjdk-18-slim AS backend-build
 ADD ./stackoverflow_backend/pom.xml pom.xml
 ADD ./stackoverflow_backend/src src/
 
-RUN mkdir ./src/main/resources/static
-COPY --from=frontend-build /react_build/build ./src/main/resources/static
+RUN mkdir ./src/main/resources/public
+COPY --from=frontend-build /react_build/build ./src/main/resources/public
 
 ####package jar
 RUN mvn clean package
