@@ -1,4 +1,4 @@
 package com.codecool.stackoverflowtw.controller.dto;
 
-public record NewAnswerDTO(String answer) {
+public record NewAnswerDTO(String answer, int question_id, java.sql.Date created) {
 }

@@ -119,7 +119,7 @@ public class AnswersDaoJdbc implements AnswersDAO {
 
     private void prepare(NewAnswerDTO answer, PreparedStatement statement) throws SQLException {
         statement.setString(1, answer.answer());
-        statement.setString(2, "some description");
+        statement.setInt(2, answer.question_id());
         Timestamp timestamp = Timestamp.valueOf(LocalDateTime.now());
         statement.setDate(3, new java.sql.Date(timestamp.getTime()));
     }
