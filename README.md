@@ -87,6 +87,8 @@ StackOverflow is a simplified question-and-answer web application where users ca
 - GET /answers/{id}: Get all answers for a specific question by ID.
 - POST /answers/: Add a new answer to a question.
 
+Postman documentation: https://documenter.getpostman.com/view/25488726/2s9YJhveg1
+
 ## Technologies Used
 
 - Java
