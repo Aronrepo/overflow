@@ -83,12 +83,9 @@ StackOverflow is a simplified question-and-answer web application where users ca
 ### API Endpoints
 
 - GET /questions/all: Get all questions along with their answer counts.
-- GET /questions/{id}: Get details of a specific question by ID.
 - POST /questions/: Add a new question.
-- DELETE /questions/{id}: Delete a question by ID.
 - GET /answers/{id}: Get all answers for a specific question by ID.
 - POST /answers/: Add a new answer to a question.
-- DELETE /answers/{id}: Delete an answer by ID.
 
 ## Technologies Used
 
