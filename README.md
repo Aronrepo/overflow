@@ -78,7 +78,11 @@ StackOverflow is a simplified question-and-answer web application where users ca
 
 
 ## Usage
-
+1. Load the main page by navigating to http://localhost:8080/.
+2. Click on the 'Create New Question' button to initiate the question creation process.
+3. Provide a title and description for your question.
+4. Save the question to confirm and store your input.
+5. Click the 'Answer' button to review new answers related to the created question.
 
 ### API Endpoints
 
@@ -86,6 +90,8 @@ StackOverflow is a simplified question-and-answer web application where users ca
 - POST /questions/: Add a new question.
 - GET /answers/{id}: Get all answers for a specific question by ID.
 - POST /answers/: Add a new answer to a question.
+
+Postman documentation: https://documenter.getpostman.com/view/25488726/2s9YJhveg1
 
 ## Technologies Used
 
